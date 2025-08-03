@@ -24,8 +24,7 @@ import java.awt.event.*;
 
 alias cptc {
 
-    show_message("Cobalt Strike Custom Tab Completion Script <$__VERSION__ $__VERSIONLEVEL__ mode > is loaded and running." );
-    
+    show_message("Cobalt Strike Custom Tab Completion Script <$__VERSION__ $__VERSIONLEVEL__ mode > is loaded and running." );   
 }
 
 
@@ -52,7 +51,6 @@ sub run_complete {
         println("Mods sent: $sent");
     }
     return $sent;
-
 }
 
 sub db_cycle {
@@ -210,19 +208,17 @@ bind Ctrl+Alt+A {
 }
 
 bind Ctrl+Space {
-    
-    update_db();
-        
-    $mug = bcli_getbinput();
-    $mug = adjprep_input($mug);
+
+    $mug = adjprep_input(bcli_getbinput());
 
     if (!$mug) {
         $ACTIVECSPC = $null;
         $COMPIDX = 0;
         return;
-
     }
-    
+
+    update_db();
+
     # If it is null/empty let's pre-set to treat as first iteration.
     if (!$BINPCONTS) {
     
