@@ -20,6 +20,12 @@ Additionally, a hotkey has been added for quicker "Select All" of contents on th
 - [Cobalt Strike Manual](https://hstechdocs.helpsystems.com/manuals/cobaltstrike)
 
 If you wish, you can easily change the key bindings for actuation per [Fortra's guide](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics_aggressor-scripts/as_cobalt-strike.htm) (see Keyboard Shortcuts section).
+---
+Tab Completion 
 
+https://github.com/user-attachments/assets/9a7f48d5-489b-4508-99fb-e4ba59642868
 
+Select All
+
+https://github.com/user-attachments/assets/407969cf-348f-4055-ba12-8252a62c2684
 
