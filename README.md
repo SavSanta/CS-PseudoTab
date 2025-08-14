@@ -4,7 +4,7 @@ Cobalt Strike 4.x compatible Aggressor Script that provide extra custom pseudo (
 
 Upon actuation of the Pseudo Tab Complete hotkey (default set to Ctrl+Space) it cycles through a completion database and instantiates the contents onto the beacon input commandline one-by-one per the keypress actuation. The script by default builds a database of completables using the configured listeners and targets. 
 
-Additionally, a hotkey has been added for quicker "Select All" of contents on the current beacon line. Dunno about you but quicker to delete long input Iie Rubeus commands) than drag-and-highlight.
+Additionally, a hotkey has been added for quicker "Select All" of contents on the current beacon line. Dunno about you but should be quicker to delete (long input like Rubeus commands) than drag-and-highlight.
 
 ## Default Configurations
 | Action  | Shortcut Binding |
