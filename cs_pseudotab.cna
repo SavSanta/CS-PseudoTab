@@ -134,9 +134,15 @@ sub update_db {
        add($targs, $item['name']);
     }
 
-    addAll($listn, $listn_sl);
-    addAll($listn, $listn_loc);
-    $COMPDB = concat($listn, $targs);
+    #addAll($listn, $listn_sl);
+    #addAll($listn, $listn_loc);
+    #$COMPDB = concat($listn, $targs);
+    
+    $COMPDB = @();
+    addAll($COMPDB, $listn_sl);
+    addAll($COMPDB, $listn_loc);
+    addAll($COMPDB, $listn);
+    addAll($COMPDB, $targs);
     
     if ($DEVDEBUG) {
         println("\[DEBUG: $__SCRIPT__\] DB has size: " . size($COMPDB) . " objects.");
